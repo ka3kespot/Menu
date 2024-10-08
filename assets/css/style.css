@@ -1,0 +1,307 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff; /* Default text color */
+  background-color: #222222; /* Default background color */
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: contain;
+  font-weight: bold;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+
+a, b {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #D52226;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.text-center {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+/* Sections General */
+section {
+  padding-bottom: 20px;
+}
+
+.section-bg {
+  background-color: #222222; /* Adjusted background color */
+}
+
+.section-title {
+  text-align: center;
+  padding:15px 0;
+}
+
+.section-title .text-center {
+  font-size: 50px;
+}
+
+.section-title h2 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #F4B800; /* Text color for h2 */
+}
+
+.section-title h2 span {
+  color: #57605b;
+}
+
+.section-title p {
+  margin: 15px auto 0 auto;
+  font-weight: 300;
+}
+
+@media (min-width: 1024px) {
+  .section-title p {
+    width: 50%;
+  }
+}
+
+/* Menu Section */
+.menu #menu-flters {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.menu #menu-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  background: none;
+  border: 2px solid #FFFFFF;
+  border-radius: 50px;
+}
+
+.menu #menu-flters li:hover, 
+.menu #menu-flters li.filter-active {
+  color: #F4B800;
+  background: #FFFFFF;
+}
+
+.menu #menu-flters li:last-child {
+  margin-right: 0;
+}
+
+.menu .menu-content {
+  margin-top: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.2mm;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu .menu-content::after {
+  position: absolute;
+  left: 20px;
+  right: 0;
+  top: -4px;
+  z-index: 1;
+  color: #dad8d4;
+  font-family: 'Poppins', "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.menu .menu-content span {
+  position: relative;
+  z-index: 3;
+  font-weight: 600;
+}
+
+.menu .menu-ingredients {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif; 
+  color: #fff;
+}
+
+.menu-item {
+  padding: 0px 4px 0px 2px;
+}
+
+/* Footer */
+#footer {
+  background: none;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #57605b;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15px; /* Added px */
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: none;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+  font-family: 'Poppins';
+}
+
+#footer .credits {
+  font-size: 13px;
+  font-family: 'Poppins';
+}
+
+/* Dashed Line */
+.dashed-line {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-top: 5px dashed #FFFFFF;
+  z-index: 9999;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.Full-line {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-top: 5px solid #FFFFFF;
+  z-index: 9999;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.ka3ke-pizza {
+  margin: 20px; /* Adjust margin as needed */
+}
+
+.table-container {
+  overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
+}
+
+/* Pizza */
+.pizza-menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #F4B800;
+  color: #fff;
+}
+
+.filter-Pizza,.filter-desserts,.filter-hotdrinks,.filter-colddrinks{
+  background-color: #F4B800;
+}
+.pizza-menu-table th,
+.pizza-menu-table td {
+  padding: 12px 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.pizza-menu-table th {
+  font-size: 16px;
+  color: #fff;
+}
+
+.pizza-menu-table td {
+  background-color: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.pizza-menu-table tr {
+  border-bottom: 1px dashed #fff;
+}
+
+.pizza-menu-table tr:last-child {
+  border-bottom: none;
+}
